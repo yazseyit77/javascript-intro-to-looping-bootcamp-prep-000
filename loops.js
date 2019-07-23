@@ -20,10 +20,12 @@ function whileLoop(n){
 return 'done';
 }
 
-function incrementVariable(i) {
-  i = i + 1;
-  return i;
+function doWhileLoop(num){
+  function incrementVariable(i) {
+    i = i + 1;
+    return i;
+  }
+  do {
+      console.log("I run once regardless");
+  } while (incrementVariable() < num);
 }
-do {
-    console.log("I run once regardless");
-} while (incrementVariable() < 5);
